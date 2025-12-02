@@ -69,7 +69,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn part_one_example() {
+    fn day_one_part_one() {
         let input = "L68
 L30
 R48
@@ -85,7 +85,7 @@ L82";
     }
 
     #[test]
-    fn part_two_example() {
+    fn day_one_part_two() {
         let input = "L68
 L30
 R48
