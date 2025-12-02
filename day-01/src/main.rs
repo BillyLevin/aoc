@@ -1,9 +1,17 @@
+use std::time::Instant;
+
 fn main() {
     let input = include_str!("../input.txt");
-    println!("Part one: {}", part_one(input));
 
-    let input = include_str!("../input.txt");
-    println!("Part two: {}", part_two(input));
+    let start = Instant::now();
+    let answer = part_one(input);
+    let elapsed = start.elapsed();
+    println!("Part one: {}, took {}ms", answer, elapsed.as_millis());
+
+    let start = Instant::now();
+    let answer = part_two(input);
+    let elapsed = start.elapsed();
+    println!("Part two: {}, took {}ms", answer, elapsed.as_millis());
 }
 
 fn part_one(input: &str) -> u64 {
